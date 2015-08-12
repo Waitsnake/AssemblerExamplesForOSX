@@ -1,0 +1,25 @@
+Here are some small assembler code examples how to use OpenGL/GLUT under OSX.
+
+If you try to assemble and link them for your own try this:
+1.) nasm -g -f macho32 GLandApple.asm
+-> will create an *.o file
+2.) xcrun gcc -framework GLUT -framework OpenGL -m32 -o GLandApple.out GLandApple.o
+-> will link your *.o file together with the GLUT, OpenGL and glibc frameworks of OSX and create your executable *.out file
+
+Last time I assmble them I have used NASM 2.11.04 as assmbler and the linker from XCode 6.2 .
+
+- gl.inc   -> I change an official gl.h   file for C to make it usable for NASM; it contains it's own licenses
+- glut.inc -> I change an official glut.h file for C to make it usable for NASM; it contains it's own licenses
+- *.asm    -> all code was done by me.
+- *.out    -> the executables that sould run at least at OSX 10.9
+
+The most part of the examples is allways the same and it initalize an OpenGL window and provides an pointer to an GL frame buffer (fbuff) 
+that can be filled inside the cyclic called draw function _draw_to_frame_buff with own code.
+In the examples I fill this frame buffer with different things: Julia sets, Mandelbrot sets, an fire plasma or an weierstrass P function (calulates pressure field around an airplane wing).
+Most of this algorithims are realy old and I wrote them decades ago to run in real mode 16-bit in DOS and some later with DirectX under Windows XP. So don't wonder when you see some crazy 8-bit or 16-bit arithmetic.
+Today I would do many thinks a differnet way and would create the algorithims more readable than in times when the CPU's were slow and you have to avoid too many memory accesses.
+Anyway have fun and start to code assembler code for OSX. :B-)
+
+
+Copyright 2015 Stino / ByteGeiZ
+
