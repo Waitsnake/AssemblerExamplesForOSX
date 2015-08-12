@@ -13,6 +13,8 @@ Last time I assmble them I have used NASM 2.11.04 as assmbler and the linker fro
 - *.asm    -> all code was done by me.
 - *.out    -> the executables that sould run at least at OSX 10.9
 
+You can close all applications with cmd+Q or ESC and you can toggle between full screen and window with cmd+F .
+
 The most part of the examples is allways the same and it initalize an OpenGL window and provides an pointer to an GL frame buffer (fbuff) 
 that can be filled inside the cyclic called draw function _draw_to_frame_buff with own code.
 In the examples I fill this frame buffer with different things: Julia sets, Mandelbrot sets, an fire plasma or an weierstrass P function (calulates pressure field around an airplane wing).
