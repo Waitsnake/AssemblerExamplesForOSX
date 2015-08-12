@@ -11,7 +11,7 @@ Last time I assmble them I have used NASM 2.11.04 as assmbler and the linker fro
 - gl.inc   -> I change an official gl.h   file for C to make it usable for NASM; it contains it's own licenses
 - glut.inc -> I change an official glut.h file for C to make it usable for NASM; it contains it's own licenses
 - *.asm    -> all code was done by me.
-- *.out    -> the executables that sould run at least at OSX 10.9
+- *.out    -> the executables that should run at least at OSX 10.9
 
 You can close all applications with cmd+Q or ESC and you can toggle between full screen and window with cmd+F .
 
