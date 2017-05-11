@@ -1,7 +1,7 @@
 ;
 ; Basic OS X calls to GLUT and OpenGL
 ;
-; Example by Stino / former ByTeGeiZ 
+; Example by Waitsnake
 ;
 ; compile with:
 ; nasm -g -f macho32 bspGLUT.asm
